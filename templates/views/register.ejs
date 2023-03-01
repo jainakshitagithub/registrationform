@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header') -%>
+<body>
+    <h1><%= name%></h1>
+    <form action='/register' method="post">
+        <label for="name">Name</label>
+<input name="name" type="text" />
+<label for="email">Email</label>
+<input name="email" type="email" />
+<label for="password">Password</label>
+<input name="password" type="text" />
+<label for="cpassword">Confirm Password</label>
+<input name="cpassword" type="text" />
+<button type="submit">Submit</button>
+    </form>
+</body>
+</html>
